@@ -6,3 +6,7 @@ def test_nginx_default():
     parser = LogParser(fmt="nginx")
     assert parser.parse(line) == 0.042
 
+def test_custom_regex():
+    line = "LATENCY=150ms"
+    parser = LogParser(regex=r"LATENCY=(\d+)ms")
+    assert parser.parse(line) == 150.0
