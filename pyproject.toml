@@ -4,13 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "latencyhist"
-version = "0.1.0"
+version = "0.1.2"
 description = "cli histogram for access logs"
+requires-python = ">=3.8"
 authors = [
     {name = "Dev", email = "dev@example.com"}
 ]
 dependencies = [
     "click>=8.0",
+    "rich>=10.0",
 ]
 
 [project.scripts]
