@@ -33,4 +33,3 @@ latencyhist --pattern 'request_time=([0-9.]+)' data.log
 
 ## License
 MIT
- 
